@@ -1,8 +1,7 @@
-import { render, screen } from "@testing-library/react";
+import { render } from "@testing-library/react";
 import TicTacToe from "./TicTacToe";
 
-test("renders learn react link", () => {
+test("rendered test", () => {
   render(<TicTacToe />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+  expect(document.getElementById("tic-tac-toe")).not.toBeEmptyDOMElement();
 });
